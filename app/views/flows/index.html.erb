@@ -1,0 +1,5 @@
+<h1>Welcome to Flowify</h1>
+
+<% @flows.each do |f| %>
+  <h2><%= link_to f.name, flow_path(f), :class => "flow-link" %></h2>
+<% end %>
